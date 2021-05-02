@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bg{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+.inner{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* header starts */
+
+nav{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-area.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;right: 0;left: 0;
+    padding: 20px 15px;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 20;
+    transition: 0.4s;
+}
+.nav-area.sticky a, .nav-area.sticky .toggle-btn{
+    color: #000;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+}
+nav .nav-area{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 40px 0;
+    transition: 0.4s;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 25px;
+}
+
+.nav-area .toggle-btn{
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: #6CC091;
+    padding: 3px 12px;
+    border: 1px solid #6CC091;
+    transition: 0.4s;
+}
+.banner{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.banner h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 300;
+}
+.banner .three-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.banner .three-box .box{
+    width: 33.33%;
+    padding: 30px 0;
+    color: #fff;
+}
+.three-box .border{
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+}
+.three-box h3{
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 20px 0;
+}
+.three-box p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.three-box .fa {
+    color: #6CC091;
+    font-size: 2.6rem;
+    transition: 0.6s;
+    z-index: 10;
+}
+
+.btn{
+    width: 180px;
+    height: 45px;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    border: 3px solid #6CC091;
+    color: #6CC091;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #6CC091;
+    transition: 0.2s;
+}
+/* header ends */
+
+
+/* two-section starts */
+
+#services{
+    padding: 100px 0;
+}
+
+.two-section .two-sec-box{
+    width: 35%;
+    text-align: center;
+    color: gray;
+}
+.two-sec-box img{
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+.two-sec-box h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.two-sec-box p{
+    padding: 25px 0;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* two-section ends */
+
+/* contact section starts */
+
+#contact{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #6CC091;
+}
+#contact .form-section{
+    padding: 0 10%;
+}
+#contact h2{
+    text-align: center;
+    margin-bottom: 70px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.name, .email{
+    width: 48%;
+}
+.name input, .email input{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 6px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+::placeholder{
+    color: rgb(209, 209, 209);
+    font-size: 1rem;
+}
+.form-section .msg-sec{
+    width: 100%;
+    margin-top: 20px;
+}
+.form-section #msg-box{
+    width: 100%;
+    height: 180px;
+    background: none;
+    padding: 10px 10px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 6px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-section span{
+    font-size: .9rem;
+    color: #fff;
+}
+#contact .btn{
+    background: none;
+    color: #fff;
+    margin: 23px auto;
+    border-color: #fff;
+}
+#contact .btn:hover{
+    background-color: #fff;
+    color: #6CC091;
+}
+.form-section p{
+    text-align: center;
+    color: rgb(209, 209, 209);
+    width: 100%;
+    font-weight: 300;
+    margin-top: 25px;
+}
+/* contact section ends */
+
+
+
+/* media query starts */
+
+@media only screen and (max-width:767px){
+    html{
+        font-size: 13px;
+    }
+ 
+}
+
+@media only screen and (max-width:676px){
+    nav .nav-area ul{
+        width: 100%;
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: rgb(46, 46, 59);
+        transition: 0.1s;
+    }
+    nav .nav-area ul li{
+        margin: 50px 0;
+    }
+    nav .nav-area.sticky ul li a{
+        color: #fff;
+    }
+    .nav-area .toggle-btn{
+        display: block;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner .three-box .box{
+        width: 100%;
+        padding: 30px 0;
+        color: #fff;
+    }
+    .three-box .border{
+        border: 0;
+    }
+    .btn{
+        width: 140px;
+        height: 40px;
+    }
+    .name, .email{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .two-section .two-sec-box{
+        width: 100%;
+        padding: 0 40px;
+        margin-top: 30px;
+    }
+}
+
+/* media query ends */
